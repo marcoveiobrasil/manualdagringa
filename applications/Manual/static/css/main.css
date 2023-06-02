@@ -1,0 +1,112 @@
+/* HEADER AND NAVBAR */
+
+header {
+  background-size: cover;
+  background-position: center;
+  min-height: 1000px;
+}
+@media screen and (max-width: 670px){
+  header{
+    min-height: 500px;
+  }
+}
+
+.brand-logo {
+    text-shadow: 0 0 7px #536489 !important;
+}
+
+.nav-wrapper {
+  height: 100px !important;
+  border-style: none !important;
+  box-shadow: none !important;
+}
+
+.navLinks:hover {
+  color: #b3ffd4 !important;
+}
+
+.showcase {
+  position: absolute !important;
+  top: 200px !important;
+}
+
+#seVirar {
+  text-shadow: 0 0 7px #536489 !important;
+}
+
+#partiuMundao {
+  color: #99ffc5 !important;
+  text-shadow: 0 0 7px #536489 !important;
+  font-size: 6rem !important;
+  text-transform: uppercase !important;
+  font-weight: 600 !important;
+}
+
+#icon {
+  text-shadow: 0 0 7px #536489 !important;
+  transition: transform .2s !important;
+}
+
+#icon:hover {
+  color: #F2F4FF !important;
+  transform: scale(1.2) !important;
+}
+
+@media screen and (max-width: 670px){
+  #partiuMundao{
+    color: #ffffff !important;
+    font-size: 2.5rem !important;
+    text-transform: uppercase !important;
+    font-weight: 600 !important;
+    text-shadow: 0 0 7px #000 !important;
+  }
+
+  #seVirar {
+    font-size: 1.0rem !important;
+    text-shadow: 0 0 7px #536489 !important;
+  }
+
+  #icon {
+    text-shadow: 0 0 7px #536489 !important;
+    font-size: 2.5rem !important;
+  }
+
+  .brand-logo {
+    font-size: 1.5rem !important;
+  }
+
+  .nav-wrapper {
+    height: 80px !important;
+    padding-top: 15px !important;
+  }
+}
+
+
+
+#logoNav {
+  height:55px !important;
+  width:55px !important;
+  margin-right: 15px !important;
+  padding-top: 5px !important;
+}
+
+#sideNavLogo {
+  height:100px !important;
+  width:100px !important;
+}
+
+/* FOOTER */
+
+.page-footer {
+  background-color: #F2F4FF !important;
+}
+
+.footer-copyright {
+  background-color: #536489 !important;
+}
+
+.mainText {
+  color: #536489 !important;
+}
+
+
