@@ -7,23 +7,118 @@
 <section class="section section-posts">
   <div class="container latest center scrollSpy" id="introduction">
       <div class="row">
-        <div class="col s12 m12 l8">
-          <div class="card">
+        <h3 class="headerText" id="novidades">Novidades do Blog</h3>
+        <div class="col s12 m12 l6" id="mainPosts">
+         <div class="card large" id="featuredCard">
             <div class="card-image">
-              <img src="{{=URL('static', 'images/poonhill.jpeg')}}">
-              <span class="card-title">Card Title</span>
-              <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+              <img src="{{=URL('static', 'images/pordosolpuket.jpeg')}}" id="featuredCardImage" class="responsive-img">
+              <span class="card-title" id="featuredCardTitle">Card Title</span>
             </div>
             <div class="card-content">
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vitae nihil, nesciunt dicta quis recusandae consectetur libero? Dolores molestiae ad consequatur dignissimos. Ipsam architecto atque totam, nisi quo a possimus?.</p>
+              <span class="mainText"><strong>Por:</strong> Zé Ruela, <strong>em</strong> 00/00/0000 <strong>atualizado há</strong> 3 horas</span>
+              <div class="divider"></div>
+              <p class="mainText">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vitae nihil, nesciunt dicta quis recusandae consectetur libero? Dolores molestiae ad consequatur dignissimos. Ipsam architecto atque totam, nisi quo a possimus?</p>
+            </div>
+            <div class="container">
+              <a class="btn-small waves-effect waves-light smallCardBtn"><span class="hide-on-med-and-down">Leia mais!</span><i class="material-icons" class="doubleArrow">double_arrow</i></a>
             </div>
           </div>
         </div>
+        <!-- SMALL CARDS ON THE SIDE -->
+        <div class="col s12 m12 l3">
+          <a href="" class="href">
+            <div class="card small posts-card">
+              <div class="card-image">
+                <img src="{{=URL('static', 'images/gliereswinter1.jpeg')}}" class="posts-card-img">
+                <span class="card-title sideCard">Card Title</span>              
+              </div>
+              <div class="card-content">
+                <span class="mainText hide-on-large-only"><strong>Por:</strong> Zé Ruela, <strong>em</strong> 00/00/0000 <strong>atualizado há</strong> 3 horas</span>
+              <div class="divider hide-on-large-only"></div>
+                <p class="mainText smallCardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, voluptatum. Vel atque architecto a.</p>
+              </div>
+              <div class="container">
+                <a class="btn-small waves-effect waves-light smallCardBtn"><i class="material-icons" class="doubleArrow">double_arrow</i></a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col s12 m12 l3">
+          <div class="card small posts-card">
+            <div class="card-image">
+              <img src="{{=URL('static', 'images/sunrise_angkorwat.jpeg')}}" class="posts-card-img">
+              <span class="card-title sideCard">Card Title</span>              
+            </div>
+            <div class="card-content">
+              <span class="mainText hide-on-large-only"><strong>Por:</strong> Zé Ruela, <strong>em</strong> 00/00/0000 <strong>atualizado há</strong> 3 horas</span>
+              <div class="divider hide-on-large-only"></div>
+              <p class="mainText smallCardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, voluptatum. Vel atque architecto a.</p>
+            </div>
+            <div class="container">
+              <a class="btn-small waves-effect waves-light smallCardBtn"><i class="material-icons" class="doubleArrow">double_arrow</i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m12 l3">
+          <div class="card small posts-card">
+            <div class="card-image">
+              <img src="{{=URL('static', 'images/sunrise_angkorwat.jpeg')}}" class="posts-card-img">
+              <span class="card-title sideCard">Card Title</span>              
+            </div>
+            <div class="card-content">
+              <span class="mainText hide-on-large-only"><strong>Por:</strong> Zé Ruela, <strong>em</strong> 00/00/0000 <strong>atualizado há</strong> 3 horas</span>
+              <div class="divider hide-on-large-only"></div>
+              <p class="mainText smallCardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, voluptatum. Vel atque architecto a.</p>
+            </div>
+            <div class="container">
+              <a class="btn-small waves-effect waves-light smallCardBtn"><i class="material-icons" class="doubleArrow">double_arrow</i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m12 l3">
+          <div class="card small posts-card">
+            <div class="card-image">
+              <img src="{{=URL('static', 'images/qt.jpg')}}" class="posts-card-img">
+              <span class="card-title sideCard">Card Title</span>              
+            </div>
+            <div class="card-content">
+              <span class="mainText hide-on-large-only"><strong>Por:</strong> Zé Ruela, <strong>em</strong> 00/00/0000 <strong>atualizado há</strong> 3 horas</span>
+              <div class="divider hide-on-large-only"></div>
+              <p class="mainText smallCardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, voluptatum. Vel atque architecto a.</p>
+            </div>
+            <div class="container">
+              <a class="btn-small waves-effect waves-light smallCardBtn"><i class="material-icons" class="doubleArrow">double_arrow</i></a>
+            </div>
+          </div>
+        </div>        
+      </div>
+      <!-- LINK FOR TODOS OS POSTS -->
+      <div class="container center s12" id="todosOsPosts">
+        <a href="" class="btn waves-effect waves-light" id="maisBtn"><h5 class="white-text">Veja todos os posts <i class="material-icons">double_arrow</i></h5></a>
       </div>
   </div>
-</section>    
+  
+</section> 
 
+<!-- PARALLAX SECTION -->
 
+<div class="parallax-container">
+  <div class="parallax"><img src="{{=URL('static', 'images/maps.jpg')}}" ></div>
+</div>
+
+<!-- SOBRE NOS -->
+
+<section class="section section-about">
+  <div class="row">
+    <div class="col s12 m4 l4 center offset-m2 offset-l2" id="leftContainer">
+      <img src="{{=URL('static', 'images/logo_manual.png')}}" alt="" class="" id="sobreImg">
+    </div>
+    <div class="col s12 m4 l4" id="sobreContainer">
+      <h3 class="headerText center">Sobre Nós</h3>
+      <p class="mainText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, omnis! Soluta quidem, magnam magni tempora asperiores consequatur nihil dignissimos unde sed. Ratione ipsum facere nam iste non, blanditiis dicta aliquam qui, suscipit distinctio, dolorum dolorem quia eos dolore optio assumenda nostrum molestiae maiores labore. Recusandae deleniti eius voluptatum voluptates quia vel, dolorem magnam nihil voluptatibus, ipsum, quam molestiae! Nemo, laboriosam?</p>
+    </div>
+  </div>
+</section>
 
 
 

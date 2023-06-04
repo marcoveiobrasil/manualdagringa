@@ -1,3 +1,14 @@
+
+.headerText {
+  color: #263238 !important;
+  padding-bottom: 30px !important;
+  text-shadow: 0 0 1px #536489 !important;
+}
+
+.mainText {
+  color: #536489 !important;
+}
+
 /* HEADER AND NAVBAR */
 
 header {
@@ -22,7 +33,7 @@ header {
 }
 
 .navLinks:hover {
-  color: #b3ffd4 !important;
+  color: #FEE097 !important;
 }
 
 .showcase {
@@ -35,7 +46,7 @@ header {
 }
 
 #partiuMundao {
-  color: #99ffc5 !important;
+  color: #FEE097 !important;
   text-shadow: 0 0 7px #536489 !important;
   font-size: 6rem !important;
   text-transform: uppercase !important;
@@ -48,13 +59,13 @@ header {
 }
 
 #icon:hover {
-  color: #F2F4FF !important;
+  color: #FEE097 !important;
   transform: scale(1.2) !important;
 }
 
 @media screen and (max-width: 670px){
   #partiuMundao{
-    color: #ffffff !important;
+    color: #c8e6c9 !important;
     font-size: 2.5rem !important;
     text-transform: uppercase !important;
     font-weight: 600 !important;
@@ -67,7 +78,7 @@ header {
   }
 
   #icon {
-    text-shadow: 0 0 7px #536489 !important;
+    text-shadow: 0 0 7px #FEE097 !important;
     font-size: 2.5rem !important;
   }
 
@@ -80,8 +91,6 @@ header {
     padding-top: 15px !important;
   }
 }
-
-
 
 #logoNav {
   height:55px !important;
@@ -105,8 +114,156 @@ header {
   background-color: #536489 !important;
 }
 
-.mainText {
-  color: #536489 !important;
+/* SECTION FEATURED POSTS */
+
+.section-posts {
+  margin-top: 20px !important;
+  padding-top: 30px !important;
 }
 
+#featuredCard {
+  border-radius: 15px !important;
+  transition: transform .2s !important;
+}
 
+#featuredCard:hover {
+  transform: scale(1.02) !important;
+}
+
+#featuredCardImage {
+  opacity: 0.8 !important;
+  border-top-left-radius: 15px !important;
+  border-top-right-radius: 15px !important;
+}
+
+#featuredCardTitle {
+  font-size: 2.5rem !important;
+  text-shadow: 0 0 17px #536489 !important;
+  font-weight: 600 !important;
+}
+
+.divider {
+  margin: 10px 5px 10px 5px !important;
+}
+
+#floatingBtn {
+  background-color: #536489 !important;
+  text-transform: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  margin-bottom: 20px !important;
+  border-radius: 10px !important;
+  transition: transform .2s !important;
+  padding: 25px !important;
+}
+
+#floatingBtn:hover {
+  transform: scale(1.05) !important;
+}
+
+.smallCardBtn {
+  background-color: #536489 !important;
+  text-transform: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  border-radius: 10px !important;
+  transition: transform .2s !important;
+  padding: 15px !important;
+}
+
+.doubleArrow {
+  padding-left: 15px !important;
+}
+
+.posts-card {
+  border-radius: 15px !important;
+  transition: transform .2s !important;
+  position: relative !important;
+}
+
+@media screen and (max-width: 1000px){
+  .posts-card {
+    height: 500px !important;
+  }
+
+  .posts-card-img{
+    max-height: 60% !important;
+  }
+
+  .smallCardText {
+    font-size: 14px !important;
+  }
+  #floatingBtn {
+   
+  }
+}
+
+@media screen and (min-width: 1100px){
+  #featuredCard {
+    height: 625px !important;
+  }
+}
+
+.smallCardText {
+  font-size: 13px;
+}
+
+.posts-card:hover {
+  transform: scale(1.02) !important;
+}
+
+.posts-card-img {
+  opacity: 0.8 !important;
+  border-top-left-radius: 15px !important;
+  border-top-right-radius: 15px !important;
+  max-height: 130px;
+}
+
+.halfway-fab {
+  background-color: #536489 !important;
+}
+
+.sideCard {
+  text-shadow: 0 0 18px #536489 !important;
+}
+
+.btn-floating {
+  transition: transform .2s !important;
+}
+
+.btn-floating:hover {
+  transform: scale(1.02) !important;
+}
+
+#todosOsPosts {
+  margin-bottom: 20px !important;
+}
+
+#maisBtn {
+  padding-bottom: 60px !important;
+  background-color: #536489 !important;
+  text-transform: none;
+  border-radius: 10px !important;
+}
+
+/* PARALLAX CONTAINER */
+
+.parallax-container {
+  max-height: 300px !important;
+  padding: 15px;
+}
+
+/* SECTION ABOUT */
+
+.section-about {
+  background-color: #EEEFFA !important;
+}
+
+#sobreImg {
+  height: 300px !important;
+  align-items: center !important;
+}
+
+#sobreContainer {
+  margin-right: 100px !important;
+}
