@@ -26,6 +26,11 @@ header {
     text-shadow: 0 0 7px #536489 !important;
 }
 
+@media screen and (max-width: 280px){
+  .brand-logo{
+    display: none !important;
+  }
+}
 .nav-wrapper {
   height: 100px !important;
   border-style: none !important;
@@ -63,9 +68,13 @@ header {
   transform: scale(1.2) !important;
 }
 
+.sidenav {
+  background-color: #536489 !important;
+}
+
 @media screen and (max-width: 670px){
   #partiuMundao{
-    color: #c8e6c9 !important;
+    color: #FEE097 !important;
     font-size: 2.5rem !important;
     text-transform: uppercase !important;
     font-weight: 600 !important;
@@ -239,11 +248,12 @@ header {
   margin-bottom: 20px !important;
 }
 
-#maisBtn {
-  padding-bottom: 60px !important;
-  background-color: #536489 !important;
-  text-transform: none;
-  border-radius: 10px !important;
+#todosPosts {
+  transition: transform .2s !important;
+}
+
+#todosPosts:hover {
+  transform: scale(1.5) !important;
 }
 
 /* PARALLAX CONTAINER */
@@ -261,9 +271,63 @@ header {
 
 #sobreImg {
   height: 300px !important;
-  align-items: center !important;
+}
+
+@media screen and (max-width: 1200px) {
+  #sobreImg{
+    height: 200px !important;
+    align-items: center !important;
+  }
 }
 
 #sobreContainer {
   margin-right: 100px !important;
+}
+
+/* PHOTO GALLERY */
+
+.section-gallery {
+  background-image: linear-gradient(to top right, #D2D9E4, #EEEFFA) !important;
+}
+
+#galleryContainer {
+  padding: 20px 10px 20px 10px !important;
+}
+
+.moreBtn {
+  background-color: #536489 !important;
+  border-radius: 15px !important;
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+  transition: transform .2s !important;
+}
+
+.moreBtn:hover {
+  transform: scale(1.2) !important;
+  color: #FEE097 !important;
+}
+
+@media screen and (max-width: 670px) and (min-width: 285px) {
+  .moreBtn {
+    font-size: 14px !important;
+  }
+}
+
+@media screen and (max-width: 285px) {
+  .maisIcon {
+    display: none !important
+  }
+
+  #hideSmall {
+    display: none !important;
+  }
+}
+
+/* SUBSCRIBE SECTION */
+
+.section-subscribe {
+  background-size: cover;
+  background-position: center;
+  max-height: 500px !important;
+  padding-top: 50px !important;
 }

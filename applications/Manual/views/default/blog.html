@@ -1,4 +1,4 @@
-{{extend 'layout.html'}}
+{{extend 'blog_layout.html'}}
 
 <!-- ICONS -->
 
@@ -93,13 +93,7 @@
         </div>        
       </div>
       <!-- LINK FOR TODOS OS POSTS -->
-      <div class="row center staggered-transition-wrapper" data-duration="0" data-staggereddelay=".9">
-        <div class="col s12 center">
-          <a href="https://www.istockphoto.com/fr/portfolio/MarcusDeFreitas?sort=purerecency&assettype=image" class="btn btn-large moreBtn">
-            <i class="material-icons left maisIcon">article</i> Todos os posts
-          </a>
-        </div>
-      </div>
+      <span><a href="" class="href"><i class="material-icons large" id="iconBlog">expand_more</i></a></span>
   </div>
   
 </section> 
@@ -110,73 +104,62 @@
   <div class="parallax"><img src="{{=URL('static', 'images/maps.jpg')}}" ></div>
 </div>
 
-<!-- SOBRE NOS -->
+<!-- ALL POSTS SECTION -->
 
-<section class="section section-about">
-  <div class="row">
-    <div class="col s12 m12 l4 center offset-l2">
-      <img src="{{=URL('static', 'images/logo_manual.png')}}" alt="" class="responsive-img" id="sobreImg">
+<section class="section section-all-posts">
+    <div class="container s12">
+        <h3 class="headerText center">Todos os Posts</h3>
+        <!-- EACH POST -->
+        <div class="row blogPost hoverable z-depth-1">
+            <a href="#" class="href mainText">
+                <div class="col s3">
+                    <div class="postCard">
+                        <img src="{{=URL('static', 'images/sunrise_angkorwat.jpeg')}}" class="responsive-img blogImg">
+                    </div>
+                </div>
+                <div class="col s9">
+                    <h6 class="headerText">Blog Title</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae fuga debitis odio molestias harum est assumenda cum ipsa saepe, obcaecati architecto qui? Debitis, quidem eaque voluptas excepturi corporis quam quis praesentium, ipsam eius fugiat, ipsa vel iure! Et sapiente praesentium commodi magni aperiam facere, molestiae ipsa sequi, eaque voluptas optio!</p>
+                    <div class="divider"></div>
+                    <span class="right author">Por: Marcus em 00/00/2023, atualizado 6 horas atras </span>
+                </div>
+            </a>
+        </div>
+
+        <div class="row blogPost hoverable z-depth-1">
+            <a href="#" class="href mainText">
+                <div class="col s3">
+                    <div class="postCard">
+                        <!-- post image -->
+                        <img src="{{=URL('static', 'images/sunrise_angkorwat.jpeg')}}" class="responsive-img blogImg">
+                    </div>
+                </div>
+                <div class="col s9">
+                    <!-- post title -->
+                    <h6 class="headerText">Blog Title</h6>
+                    <!-- post introduction -->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae fuga debitis odio molestias harum est assumenda cum ipsa saepe, obcaecati architecto qui? Debitis, quidem eaque voluptas excepturi corporis quam quis praesentium, ipsam eius fugiat, ipsa vel iure! Et sapiente praesentium commodi magni aperiam facere, molestiae ipsa sequi, eaque voluptas optio!</p>
+                    <div class="divider"></div>
+                    <!-- posted by, date, updated at -->
+                    <span class="right author">Por: Marcus em 00/00/2023, atualizado 6 horas atras </span>
+                </div>
+            </a>
+        </div>
+        
+        
+        <!-- PAGINATION -->
+        <ul class="pagination center">
+            <li class="disabled hoverable"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+            <li class="active hoverable"><a href="#!">1</a></li>
+            <li class="waves-effect hoverable"><a href="#!">2</a></li>
+            <li class="waves-effect hoverable"><a href="#!">3</a></li>
+            <li class="waves-effect hoverable"><a href="#!">4</a></li>
+            <li class="waves-effect hoverable"><a href="#!">5</a></li>
+            <li class="waves-effect hoverable"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+          </ul>
     </div>
-    <div class="col s10 m10 l4 offset-s1 offset-m1" id="sobreContainer">
-      <h3 class="headerText center">Sobre Nós</h3>
-      <p class="mainText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, omnis! Soluta quidem, magnam magni tempora asperiores consequatur nihil dignissimos unde sed. Ratione ipsum facere nam iste non, blanditiis dicta aliquam qui, suscipit distinctio, dolorum dolorem quia eos dolore optio assumenda nostrum molestiae maiores labore. Recusandae deleniti eius voluptatum voluptates quia vel, dolorem magnam nihil voluptatibus, ipsum, quam molestiae! Nemo, laboriosam?</p>
-    </div>
-  </div>
 </section>
 
-<!-- PARALLAX SECTION -->
-
-<div class="parallax-container">
-  <div class="parallax"><img src="{{=URL('static', 'images/airport.jpg')}}" ></div>
-</div>
-
-<!-- PHOTO GALLERY -->
-
-<section class="section section-gallery">
-  <div class="container s12" id="galleryContainer">
-    <h3 class="headerText center">Galeria de Fotos</h3>
-    <!-- FIRST ROW OF PICTURES -->
-    <div class="row">
-      <div class="col s12 m6 l3">
-        <img class="materialboxed responsive-img" src="https://images.unsplash.com/photo-1614722860207-909e0e8dfd99?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="">
-      </div>
-      <div class="col s12 m6 l3">
-        <img class="materialboxed responsive-img" src="https://images.unsplash.com/photo-1614722860207-909e0e8dfd99?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="">
-      </div>
-      <div class="col s12 m6 l3">
-        <img class="materialboxed responsive-img" src="https://images.unsplash.com/photo-1614722860207-909e0e8dfd99?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="">
-      </div>
-      <div class="col s12 m6 l3">
-        <img class="materialboxed responsive-img" src="https://images.unsplash.com/photo-1614722860207-909e0e8dfd99?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="">
-      </div>
-    </div>
-    <!-- SECOND ROW OF PICTURES -->
-    <div class="row">
-      <div class="col s12 m6 l3">
-        <img class="materialboxed responsive-img" src="https://images.unsplash.com/photo-1614722860207-909e0e8dfd99?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="">
-      </div>
-      <div class="col s12 m6 l3">
-        <img class="materialboxed responsive-img" src="https://images.unsplash.com/photo-1614722860207-909e0e8dfd99?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="">
-      </div>
-      <div class="col s12 m6 l3">
-        <img class="materialboxed responsive-img" src="https://images.unsplash.com/photo-1614722860207-909e0e8dfd99?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="">
-      </div>
-      <div class="col s12 m6 l3">
-        <img class="materialboxed responsive-img" src="https://images.unsplash.com/photo-1614722860207-909e0e8dfd99?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="">
-      </div>
-    </div>
-    
-    <!-- MORE PICTURES BUTTON -->
-    <div class="row center staggered-transition-wrapper" data-duration="0" data-staggereddelay=".9">
-      <div class="col s12 center">
-        <a href="https://www.istockphoto.com/fr/portfolio/MarcusDeFreitas?sort=purerecency&assettype=image" class="btn btn-large moreBtn">
-          <i class="material-icons left maisIcon">photo_camera</i> Galeria <span id="hideSmall">de Fotos</span>
-        </a>
-      </div>
-    </div>
-  </div>
-  </div>
-</section>
 
 <!-- SUBSCRIBE SECTION -->
 

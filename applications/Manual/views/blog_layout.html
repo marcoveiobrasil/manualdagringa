@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge{{=not request.is_local and ',chrome=1' or ''}}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{=response.title or request.application}} - Manual da Gringa</title>
+    <title>Blog - Manual da Gringa</title>
     <!-- http://dev.w3.org/html5/markup/meta.name.html -->
     <meta name="application-name" content="{{=request.application}}">
     <!-- Speaking of Google, don't forget to set your site up:
@@ -19,7 +19,7 @@
     <link rel="apple-touch-icon" href="{{=URL('static','images/favicon.png')}}">
     <link rel="stylesheet" href="{{=URL('static','css/web2py-bootstrap4.css')}}"/>
     <link rel="stylesheet" href="{{=URL('static','css/materialize.min.css')}}">
-    <link rel="stylesheet" href="{{=URL('static','css/main.css')}}">
+    <link rel="stylesheet" href="{{=URL('static','css/styles.css')}}">
 
      <!-- Font Awesome icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
@@ -39,8 +39,8 @@
    
   <!-- BODY OF THE PAGE -->
   <body>
-    <header style="background-image: url({{=URL('static', 'images/poonhill.jpeg')}});">
-      <nav class="nav-wrapper transparent valign-wrapper">
+    <header>
+      <nav class="nav-wrapper valign-wrapper">
         <div class="container">
           <a href="#" class="href hide-on-large-only">
             <img src="{{=URL('static', 'images/logo_manual.png')}}" alt="" id="logoNav">
@@ -71,8 +71,8 @@
           </div>
         </li>
         <li>
-          <div class="divider"></div>
-        </li>
+            <div class="divider"></div>
+          </li>
         <li>
           <a href="https://www.istockphoto.com/fr/portfolio/MarcusDeFreitas?sort=purerecency&assettype=image" class="white-text" target="_blank"><i class="fa-solid fa-camera white-text"></i>Galeria</a>
         </li>
@@ -87,17 +87,6 @@
           <a href="https://www.youtube.com/channel/UCoPhB8VjwkLsquIQPjiLK2A" class="white-text" target="_blank">
           <i class="fa-brands fa-youtube white-text"></i> Youtube</a></li>
       </ul>
-      <!-- HEADER TEXT -->
-      <div class="showcase center">
-        <div class="row valign-wrapper">
-          <div class="col s12" id="showcaseBox">
-            <h1 id="partiuMundao">Partiu mundão?!</h1>
-            <h5 class="white-text" id="seVirar">Como se virar na gringa sem ter muita grana e com o maximo de interação com a cultura local.</h5>
-            <span><a href="" class="href"><i class="material-icons white-text large" id="icon">expand_more</i></a></span>
-          </div>
-        </div>
-        
-      </div> 
     </header>
       {{include}}
       {{=response.toolbar() if response.show_toolbar else ''}}
